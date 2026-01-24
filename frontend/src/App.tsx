@@ -1,16 +1,15 @@
 import './App.css'
-import Products from './components/Products'
 import Navbar from './components/Navbar'
+import Dashboard from './components/Dashboard'
 
 function App() {
 
   return (
     <>
-      <p>Welcome to the Candle Area Fullstack Application</p>
-      <Products />
       <Navbar />
+      <Dashboard />
     </>
   )
-}
+}``
 
 export default App
