@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 
 const Products = () => {
-    const [products, setProducts] = useState([])
+    const [, setProducts] = useState([])
 
     useEffect(() => {
         const fetchedProducts = async () => {
