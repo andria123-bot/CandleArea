@@ -10,14 +10,15 @@ const Navbar = () => {
     const total = 0;
 
     useEffect(() => {
-        const handleClickOutside = (e: { target: { closest: (arg0: string) => any } }) => {
-            if (open && !e.target.closest('.relative.group')){
+        const handleClickOutside = (e: Event) => {
+            const target = e.target as HTMLElement;
+            if (open && !target.closest('.relative.group')){
                 setOpen(false);
             }
         }
 
-        document.addEventListener('click', handleClickOutside)
-        return () => document.removeEventListener('click', handleClickOutside)
+        document.addEventListener('click', handleClickOutside as EventListener)
+        return () => document.removeEventListener('click', handleClickOutside as EventListener)
     }, [open]) 
 
     return (
