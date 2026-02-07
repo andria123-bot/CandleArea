@@ -2,6 +2,7 @@ import Logo from "../../icons/Logo.png"
 import UserIcon from "../../icons/DefaultPfp.png"
 import { FiChevronDown, FiShoppingCart } from "react-icons/fi"
 import { useState, useEffect } from "react"
+import { NavLink } from "react-router-dom"
 
 const Navbar = () => {
     const [ open, setOpen ] = useState(false);
@@ -24,11 +25,13 @@ const Navbar = () => {
     return (
         <nav className="w-full px-3 xs:px-4 sm:px-6 lg:px-8 py-2 sm:py-3 bg-white/90 backdrop-blur-sm border-b border-gray-100 shadow-sm sticky top-0 z-50">
             <div className="flex items-center justify-between">
-                
                 <div className="flex items-center gap-1 sm:gap-2 group">
+                    
                     <div className="relative">
                         <div className="absolute inset-0 bg-gradient-to-br from-amber-400/30 to-orange-400/30 rounded-xl blur-sm group-hover:blur transition-all duration-300"></div>
-                        <img src={Logo} alt="CandleArea" className="relative w-7 h-7 sm:w-8 sm:h-8 md:w-10 md:h-10 rounded-lg border border-amber-200 shadow-sm hover:scale-105 hover:rotate-3 transition-all duration-300 cursor-pointer"/>
+                        <NavLink to="/">
+                            <img src={Logo} alt="CandleArea" onClick={() => {}} className="relative w-7 h-7 sm:w-8 sm:h-8 md:w-10 md:h-10 rounded-lg border border-amber-200 shadow-sm hover:scale-105 hover:rotate-3 transition-all duration-300 cursor-pointer"/>
+                        </NavLink>
                     </div>
                     <div className="flex flex-col leading-tight">
                         <h1 className="font-bold text-gray-900 text-base sm:text-lg md:text-xl tracking-tight">
@@ -39,6 +42,15 @@ const Navbar = () => {
                         </p>
                     </div>
                 </div>
+
+                <NavLink to="/" className="text-gray-700 hover:text-amber-500 font-medium transition-colors duration-200 relative group">
+                    Home
+                    <span className="absolute left-0 bottom-0 h-0.5 w-0 bg-amber-500 transition-all duration-300 group-hover:w-full"></span>
+                </NavLink>
+                <NavLink to="/about" className="text-gray-700 hover:text-amber-500 font-medium transition-colors duration-200 relative group">
+                    About
+                    <span className="absolute left-0 bottom-0 h-0.5 w-0 bg-amber-500 transition-all duration-300 group-hover:w-full"></span>
+                </NavLink>
 
                 <div className="flex items-center gap-2 sm:gap-3 md:gap-4">
                     <div className="relative group">
@@ -69,6 +81,15 @@ const Navbar = () => {
                         </div>
                     </div>
                 </div>
+                <NavLink to="/services" className="text-gray-700 font-medium transition-colors duration-200 hover:text-amber-500 group relative">
+                    Services
+                    <span className="absolute left-0 bottom-0 h-0.5 w-0 bg-amber-500 transition-all duration-300 group-hover:w-full"></span>
+                </NavLink>
+
+                <NavLink to="/contact" className="text-gray-700 hover:text-amber-500 font-medium transition-colors duration-200 group relative">
+                    Contact Us
+                    <span className="absolute left-0 bottom-0 h-0.5 w-0 bg-amber-500 transition-all duration-300 group-hover:w-full"></span>
+                </NavLink>
 
                 <div className="flex items-center gap-1 sm:gap-2 md:gap-3">
                     <div className="relative group">
