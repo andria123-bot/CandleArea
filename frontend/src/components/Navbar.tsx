@@ -28,7 +28,7 @@ const Navbar = () => {
                 <div className="flex items-center gap-1 sm:gap-2 group">
                     
                     <div className="relative">
-                        <div className="absolute inset-0 bg-gradient-to-br from-amber-400/30 to-orange-400/30 rounded-xl blur-sm group-hover:blur transition-all duration-300"></div>
+                        <div className="absolute inset-0 bg-linear-to-br from-amber-400/30 to-orange-400/30 rounded-xl blur-sm group-hover:blur transition-all duration-300"></div>
                         <NavLink to="/">
                             <img src={Logo} alt="CandleArea" onClick={() => {}} className="relative w-7 h-7 sm:w-8 sm:h-8 md:w-10 md:h-10 rounded-lg border border-amber-200 shadow-sm hover:scale-105 hover:rotate-3 transition-all duration-300 cursor-pointer"/>
                         </NavLink>
@@ -38,7 +38,7 @@ const Navbar = () => {
                             CandleArea
                         </h1>
                         <p className="text-xs sm:text-[14px] text-amber-600 font-medium tracking-wide">
-                            Illuminate
+                            Illuminate your area
                         </p>
                     </div>
                 </div>
