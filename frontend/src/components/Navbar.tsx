@@ -99,7 +99,7 @@ const Navbar = () => {
                                     <FiShoppingCart size={16} />
                                 </div>
                                 {quantity > 0 && (
-                                    <span className="absolute -top-2 -right-2 w-4 h-4 bg-gradient-to-r from-amber-500 to-orange-500 text-white text-[10px] font-bold rounded-full flex items-center justify-center shadow-sm">
+                                    <span className="absolute -top-2 -right-2 w-4 h-4 bg-linear-to-r from-amber-500 to-orange-500 text-white text-[10px] font-bold rounded-full flex items-center justify-center shadow-sm">
                                         {quantity}
                                     </span>
                                 )}
