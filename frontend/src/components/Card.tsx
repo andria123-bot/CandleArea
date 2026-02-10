@@ -50,7 +50,9 @@ const Card = () => {
             </div>
           ))}
         </div>
-
+        <button onClick={nextSlide} className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-amber-200 text-amber-800 rounded-full p-3 shadow-lg hover:bg-amber-300 transition-colors duration-200 z-50 -mr-4">
+          →
+        </button>
       </div>
     </div>
   );
