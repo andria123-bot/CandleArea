@@ -1,11 +1,11 @@
 import { useState } from "react";
-import C1 from '../../dist/CandlePhotos/1.jpg'
-import C2 from '../../dist/CandlePhotos/2.jpg'
-import C3 from '../../dist/CandlePhotos/3.jpg'
-import C4 from '../../dist/CandlePhotos/4.jpg'
-import C5 from '../../dist/CandlePhotos/5.jpg'
-import C6 from '../../dist/CandlePhotos/6.jpg'
-import C7 from '../../dist/CandlePhotos/7.jpg'
+import C1 from '../assets/CandlePhotos/1.jpg'
+import C2 from '../assets/CandlePhotos/2.jpg'
+import C3 from '../assets/CandlePhotos/3.jpg'
+import C4 from '../assets/CandlePhotos/4.jpg'
+import C5 from '../assets/CandlePhotos/5.jpg'
+import C6 from '../assets/CandlePhotos/6.jpg'
+import C7 from '../assets/CandlePhotos/7.jpg'
 
 const hotTopics = [
   { id: 1, title: "Vanilla Glow", description: "A warm and comforting vanilla-scented candle.", img: C1, price: 14.99 },
