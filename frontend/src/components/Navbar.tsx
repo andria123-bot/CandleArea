@@ -23,7 +23,7 @@ const Navbar = () => {
     }, [open]) 
 
     return (
-        <nav className="w-full px-3 xs:px-4 sm:px-6 lg:px-8 py-2 sm:py-3 bg-white/90 backdrop-blur-sm border-b border-gray-100 shadow-sm sticky top-0 z-50">
+        <nav className="w-full px-3 xs:px-4 sm:px-6 lg:px-8 py-2 sm:py-3 bg-white/90 backdrop-blur-sm border-b border-gray-100 shadow-sm sticky top-0 z-500">
             <div className="flex items-center justify-between">
                 <div className="flex items-center gap-1 sm:gap-2 group">
                     
